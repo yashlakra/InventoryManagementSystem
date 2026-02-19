@@ -1,0 +1,86 @@
+# Inventory Management System - Requirements
+
+## System Requirements
+
+### Software Requirements
+- Java Development Kit (JDK) 14 or higher
+- Java Runtime Environment (JRE) 14 or higher
+- Operating System: Windows, macOS, or Linux
+
+### Hardware Requirements
+- Minimum 512 MB RAM
+- 50 MB available disk space
+- Standard keyboard for input
+
+## Functional Requirements
+
+### Core Features
+1. Product Management
+   - Add products with unique ID
+   - Store product name, quantity, and price
+   - Prevent duplicate product IDs
+   - Display product details
+
+2. Inventory Operations
+   - View all products in inventory
+   - Search products by ID
+   - Calculate total inventory value
+   - Display individual product worth (quantity × price)
+
+3. Data Persistence
+   - Save inventory to file (products.txt)
+   - Load inventory from file on startup
+   - Auto-save on application exit
+   - CSV format for data storage
+
+4. User Interface
+   - Command-line menu interface
+   - Input validation and error handling
+   - Clear user prompts and feedback
+
+## Technical Requirements
+
+### Programming Language
+- Java (using Java 14+ features like switch expressions)
+
+### Dependencies
+- Java Standard Library
+  - java.io.* (File I/O operations)
+  - java.util.* (Collections and Scanner)
+
+### Data Structure
+- ArrayList for in-memory inventory storage
+- Product class with encapsulated fields
+
+### File Format
+- CSV format: id,name,quantity,price
+- Text file: products.txt
+
+## Non-Functional Requirements
+
+### Performance
+- Instant response for menu operations
+- Efficient file I/O operations
+- Support for reasonable inventory sizes (1000+ products)
+
+### Usability
+- Intuitive menu-driven interface
+- Clear error messages
+- Simple numeric menu selection
+
+### Reliability
+- Input validation for all user entries
+- Exception handling for file operations
+- Data integrity checks (duplicate ID prevention)
+
+### Maintainability
+- Clean, readable code structure
+- Modular design with separate Product class
+- Consistent naming conventions
+
+## Constraints
+
+- Single-user application (no concurrent access)
+- No database integration (file-based storage only)
+- Command-line interface only (no GUI)
+- No network connectivity required

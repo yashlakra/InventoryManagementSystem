@@ -47,7 +47,7 @@ java InventoryManagementSystem
 
 ## Data Storage
 
-Product data is automatically saved to `products.txt` in CSV format. The file is loaded on startup and saved on exit.
+Product data is automatically saved to `Inventory.txt` in CSV format. The file is loaded on startup and saved on exit.
 
 ## Example
 
@@ -61,13 +61,10 @@ Product data is automatically saved to `products.txt` in CSV format. The file is
 6. Exit
 Choose: 1
 
-ID: 101
+ID: 1
 Name: Laptop
 Quantity: 15
 Unit price: 899.99
 Item added to inventory.
 ```
 
-## License
-
-This project is open source and available for educational purposes.
